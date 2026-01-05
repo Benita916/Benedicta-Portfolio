@@ -1,0 +1,299 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benedicta Ezeala | Portfolio</title>
+  <style>
+    /* COLORS: Blue, Gold, White */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #003366;
+      color: #ffd700;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091870625-60b56efbdfc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 10px 0 30px 0;
+    }
+    .hero button {
+      padding: 15px 30px;
+      margin: 5px;
+      border: none;
+      background-color: #ffd700;
+      color: #003366;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .hero button:hover {
+      background-color: #e6c200;
+    }
+    section {
+      padding: 60px 30px;
+    }
+    section h2 {
+      color: #003366;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .skills, .projects, .experience, .education {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background-color: #f7f7f7;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+    .card p, .card li {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    footer {
+      background-color: #003366;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    a.button-link {
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Benedicta Ezeala</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Data & Compliance Professional</h2>
+      <p>CAMS Certified | AI Automation Engineer | Corporate Finance & Risk Specialist</p>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a results-driven Data & Compliance Professional with over 10 years of experience in business intelligence, regulatory engagement, and risk management. I am a <strong>Certified Anti-Money Laundering Specialist (CAMS)</strong> and an <strong>AI Automation Engineer</strong>, skilled at leveraging automation to streamline workflows and increase operational efficiency.
+      <br><br>
+      Recently, I designed and implemented an <strong>HR Assist Chatbot</strong> using n8n to streamline internal HR and policy support. The solution automates repetitive HR queries, reduces response time, and ensures consistent policy interpretation. I also built a user-friendly web interface and presented the system to management for easy adoption.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>AI Automation & Analytics</h3>
+        <ul>
+          <li>AI Automation Engineering</li>
+          <li>n8n workflow design</li>
+          <li>Power BI, SQL, Data Analysis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Finance & Compliance</h3>
+        <ul>
+          <li>AML & CAMS Certified</li>
+          <li>Corporate Finance & Risk Management</li>
+          <li>Financial Modelling & Business Analytics</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Project & Operations Management</h3>
+        <ul>
+          <li>Agile & Waterfall Methodologies</li>
+          <li>Process Optimization & Business Evaluation</li>
+          <li>Leadership & Team Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>HR Assist Chatbot (n8n)</h3>
+        <p>Automated HR support using AI & n8n workflow. Improved response time, reduced workload, and ensured consistent policy interpretation.</p>
+        <p>
+          <strong>Frontend:</strong> <a href="https://sites.google.com/view/benhrassist/home" class="button-link" target="_blank">Google Sites</a><br>
+          <strong>Presentation:</strong> <a href="https://app.presentations.ai/view/7rWKUwNbV5" class="button-link" target="_blank">PowerPoint Deck</a><br>
+          <strong>Backend:</strong> <a href="https://bennyhil.app.n8n.cloud/workflow/jxDp7aXsniLSnPxd" class="button-link" target="_blank">n8n Workflow</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Compliance Officer | Access Bank Plc (2016 – Present)</h3>
+        <ul>
+          <li>Handled AML compliance, KYC/KYB, EDD, SAR/STR filing.</li>
+          <li>Liaised with LEAs for investigations.</li>
+          <li>Monitored and validated regulatory controls.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Business & Financial Analyst | 10alytics (2023 – Present, Remote)</h3>
+        <ul>
+          <li>Financial modeling, reporting, and forecasting.</li>
+          <li>Data-driven analysis using Power BI.</li>
+          <li>Business process optimization and analytics.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Head of Operations | Access Bank Plc (2013 – 2016)</h3>
+        <ul>
+          <li>Ensured SOP adherence and regulatory compliance.</li>
+          <li>Managed operations teams and staff development.</li>
+          <li>Enhanced productivity, customer satisfaction, and compliance culture.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education & Certifications</h2>
+    <div class="education">
+      <div class="card">
+        <h3>PhD Corporate Finance</h3>
+        <p>Rivers State University, 2023</p>
+      </div>
+      <div class="card">
+        <h3>MSc Banking & Finance</h3>
+        <p>Rivers State University, 2019</p>
+      </div>
+      <div class="card">
+        <h3>MBA Banking & Finance</h3>
+        <p>University of Port Harcourt, 2014</p>
+      </div>
+      <div class="card">
+        <h3>BSc Banking & Finance</h3>
+        <p>Lagos State University, 2004</p>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>CAMS – Certified Anti-Money Laundering Specialist</li>
+          <li>AI Automation Engineer</li>
+          <li>Microsoft Dynamics – Finance & Operations</li>
+          <li>Financial & Business Analytics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a class="button-link" href="mailto:benitaezeala@gmail.com">benitaezeala@gmail.com</a></p>
+    <p>Phone: +234 818 612 7812</p>
+    <p>LinkedIn: <a class="button-link" href="https://www.linkedin.com/in/benita-ezeala" target="_blank">www.linkedin.com/in/benita-ezeala</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 Benedicta Ezeala. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+
+</body>
+</html>
